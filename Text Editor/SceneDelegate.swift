@@ -17,14 +17,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         let viewController = ViewController()
+        let secondVC = SecondViewController()
         
         let navController = UINavigationController(rootViewController: viewController)
+        let secondNavController = UINavigationController(rootViewController: secondVC)
         
         let tabBarController = UITabBarController()
-        tabBarController.setViewControllers([navController], animated: true)
+        tabBarController.setViewControllers([navController, secondNavController], animated: true)
         
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
+        window?.backgroundColor = .systemBackground
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
     }
