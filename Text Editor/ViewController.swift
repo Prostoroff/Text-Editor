@@ -192,7 +192,7 @@ extension ViewController {
         NSLayoutConstraint.activate([
             label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             label.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
-            label.heightAnchor.constraint(equalToConstant: 150),
+            label.heightAnchor.constraint(equalToConstant: 120),
             label.widthAnchor.constraint(equalToConstant: 300)
         ])
         
@@ -223,28 +223,28 @@ extension ViewController {
             pickerOfLines.topAnchor.constraint(equalTo: slider.bottomAnchor, constant: 10),
             pickerOfLines.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             pickerOfLines.widthAnchor.constraint(equalToConstant: view.frame.width * 0.45),
-            pickerOfLines.heightAnchor.constraint(equalToConstant: 150)
+            pickerOfLines.heightAnchor.constraint(equalToConstant: 100)
         ])
         
         NSLayoutConstraint.activate([
             pickerOfTextColor.centerYAnchor.constraint(equalTo: pickerOfLines.centerYAnchor),
             pickerOfTextColor.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             pickerOfTextColor.widthAnchor.constraint(equalToConstant: view.frame.width * 0.45),
-            pickerOfTextColor.heightAnchor.constraint(equalToConstant: 150)
+            pickerOfTextColor.heightAnchor.constraint(equalToConstant: 100)
         ])
         
         NSLayoutConstraint.activate([
             pickerOfFontName.topAnchor.constraint(equalTo: pickerOfLines.bottomAnchor, constant: 10),
             pickerOfFontName.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             pickerOfFontName.widthAnchor.constraint(equalToConstant: view.frame.width * 0.45),
-            pickerOfFontName.heightAnchor.constraint(equalToConstant: 150)
+            pickerOfFontName.heightAnchor.constraint(equalToConstant: 100)
         ])
         
         NSLayoutConstraint.activate([
             pickerColorOfShadow.topAnchor.constraint(equalTo: pickerOfTextColor.bottomAnchor, constant: 10),
             pickerColorOfShadow.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             pickerColorOfShadow.widthAnchor.constraint(equalToConstant: view.frame.width * 0.45),
-            pickerColorOfShadow.heightAnchor.constraint(equalToConstant: 150)
+            pickerColorOfShadow.heightAnchor.constraint(equalToConstant: 100)
         ])
         
         NSLayoutConstraint.activate([
